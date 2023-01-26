@@ -15,8 +15,7 @@ mvn spring-boot:run
 
 - **Database**: This project uses a MySQL Database, check and edit *application.yml* in the resource directory for the connection properties. Here is an example for a MySQL DB:
 
-- After creating a database and initially running the spring application the tables are generated automatically but you have to execute the following 
-- two queries for the users to work correctly.
+- After creating a database and initially running the spring application the tables are generated automatically but you have to execute the following two queries for the users to work correctly.
 - INSERT INTO authority (id, name) VALUES (1, 'ROLE_USER');
 - INSERT INTO authority (id, name) VALUES (2, 'ROLE_ADMIN');
 
