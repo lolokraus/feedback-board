@@ -45,10 +45,11 @@ spring:
 I'm using [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) to encode passwords. Your can generate your hashes with this simple tool: [BCrypt Calculator](https://www.dailycred.com/article/bcrypt-calculator)
 
 
-#Frontend
+##Frontend
 
 **Make sure you also have minimal NPM 6.12.0, Node 12.13.0 and angular-cli@9.1.3 globally installed**
 
+```bash
 # change directory to the repo's frontend folder
 cd feedback-board/backend
 
