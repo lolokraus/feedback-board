@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  color: rgba(0, 0, 0, .54);
+  font-family: Roboto, "Helvetica Neue";
+}
+
+.content{
+  min-height:calc(100vh - 130px - 64px);
+  background-color: rgb(45, 45, 45);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1279px) {
+  .content {
+    background-color: rgb(45, 45, 45);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    background-color: rgb(45, 45, 45);
+  }
+}

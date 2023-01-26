@@ -1,0 +1,12 @@
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+  <mat-card *ngFor="let feedback of feedbacks" fxFlex="calc(20%-40px)" fxFlex.sm="calc(50%-25px)" >
+    <button class="delete-icon" mat-icon-button (click)="deleteFeedback(feedback)">
+      <mat-icon>delete_forever</mat-icon>
+    </button>
+    <mat-card-header>
+      <mat-card-title>{{"Feedback: " + (feedback.name ? feedback.name : "Box Feedback")}}</mat-card-title>
+      <mat-card-subtitle>{{"Description: " + (feedback.description ? feedback.description : "Box Feedback")}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="feedback.picByte">
+  </mat-card>
+</div>
